@@ -1,0 +1,7 @@
+#Mon Sep 08 16:40:57 EEST 2025
+base.0=E\:\\MyPyPro\\NoteR\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=E\:\\MyPyPro\\NoteR\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

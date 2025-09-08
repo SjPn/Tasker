@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/fragment_future_notes.xml",
+        "source": "com.noter.app-main-37:/layout/fragment_future_notes.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "com.noter.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/activity_note_detail.xml",
+        "source": "com.noter.app-main-37:/layout/activity_note_detail.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/item_note.xml",
+        "source": "com.noter.app-main-37:/layout/item_note.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/activity_future_notes.xml",
+        "source": "com.noter.app-main-37:/layout/activity_future_notes.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/item_day.xml",
+        "source": "com.noter.app-main-37:/layout/item_day.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/item_overdue_note.xml",
+        "source": "com.noter.app-main-37:/layout/item_overdue_note.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/activity_main_pager.xml",
+        "source": "com.noter.app-main-37:/layout/activity_main_pager.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/fragment_main.xml",
+        "source": "com.noter.app-main-37:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/fragment_overdue_notes.xml",
+        "source": "com.noter.app-main-37:/layout/fragment_overdue_notes.xml"
+    },
+    {
+        "merged": "com.noter.app-mergeDebugResources-34:/layout/activity_notes.xml",
+        "source": "com.noter.app-main-37:/layout/activity_notes.xml"
+    }
+]

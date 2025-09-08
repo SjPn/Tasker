@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Taskora</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="add_note">Add note</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="today">Today</string>
+    <string name="future_tasks">Future Tasks</string>
+    <string name="all_tasks_completed">Excellent! All tasks completed.</string>
+    <string name="tasks_remaining">You have %1$d of %2$d tasks remaining.</string>
+    <string name="no_tasks_today">No tasks for today. Add something!</string>
+    <string name="work_is_not_wolf">Work is not a wolf. Forest run not.</string>
+    <string name="dont_sit_straight">Don\'t sit straight on your ass.</string>
+    <string name="lazy_pig">Lazy pig. Oink oink oink.</string>
+    <string name="future_tasks_description">Here will be your future tasks</string>
+    <string name="export_data">Export Data</string>
+    <string name="import_data">Import Data</string>
+    <string name="export_success">Data exported successfully</string>
+    <string name="import_success">Data imported successfully</string>
+    <string name="export_error">Error exporting data</string>
+    <string name="import_error">Error importing data</string>
+    <string name="select_file">Select file</string>
+    <string name="save_file">Save file</string>
+</resources> 

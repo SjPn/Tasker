@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Фоновые цвета (идентичны светлой теме) -->
+    <color name="background_primary">#FFFAFAFA</color>
+    <color name="background_secondary">#FFFFFFFF</color>
+    <color name="background_card">#FFFFFFFF</color>
+    
+    <!-- Акцентные цвета (остаются теми же) -->
+    <color name="primary">#FF1976D2</color>
+    <color name="primary_dark">#FF1565C0</color>
+    <color name="primary_light">#FFBBDEFB</color>
+    <color name="accent">#FF2196F3</color>
+    <color name="accent_dark">#FF1976D2</color>
+    
+    <!-- Текстовые цвета (идентичны светлой теме) -->
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="text_hint">#FFBDBDBD</color>
+    
+    <!-- Статусные цвета (остаются теми же) -->
+    <color name="success">#FF2196F3</color>
+    <color name="warning">#FFFF9800</color>
+    <color name="error">#FFF44336</color>
+    
+    <!-- Градиентные цвета (остаются теми же) -->
+    <color name="gradient_start">#FF1976D2</color>
+    <color name="gradient_end">#FF42A5F5</color>
+    
+    <!-- Устаревшие цвета (для совместимости) -->
+    <color name="light_gray">@color/background_primary</color>
+    <color name="medium_gray">#FFE0E0E0</color>
+    <color name="dark_gray">@color/text_secondary</color>
+    <color name="dark_green">@color/primary_dark</color>
+    
+    <!-- Цвета для выделения (идентичны светлой теме) -->
+    <color name="note_highlight">@color/background_primary</color>
+    
+    <!-- Material Design цвета (остаются теми же) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources> 

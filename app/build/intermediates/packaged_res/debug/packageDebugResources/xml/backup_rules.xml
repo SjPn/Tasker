@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude specific files or directories that should not be backed up.
+         For example, if your app uses the internal cache directory, you should
+         not back up the contents of that directory. -->
+</full-backup-content> 
