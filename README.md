@@ -58,8 +58,6 @@ Tasker — это твой личный центр управления дела
     📱 Android: Min API 26 (8.0), Target 34 (14)
 
 📸 Скриншоты
-<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/3be41b37-e62d-4f6b-aae6-3528bb8966e2" />
-<img width="270" height="600" alt="1" src="https://github.com/user-attachments/assets/dd5fb833-0b0b-4bd6-b837-bfd4c0dccdf5" />
-<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/7afbc84e-21e7-4a27-8328-8827601bb700" />
-
-
+<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/64ad1751-8ed7-4083-8e45-d76d32fc6aee" />
+<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/f8a7b282-771b-4e5e-bdd2-ec0ea66bff9b" />
+<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/7f1d30df-090f-4110-b7d0-9039ea1c3a9a" />
