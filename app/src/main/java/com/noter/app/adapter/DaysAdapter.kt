@@ -58,12 +58,41 @@ class DaysAdapter(
                 binding.notesPreviewTextView.text = day.getNotesPreview()
                 android.util.Log.d("DaysAdapter", "Binding day: ${day.date}, notes: ${day.notes.size}, preview: ${day.getNotesPreview()}")
                 
-                // Progress: percent completed
+                // Progress: percent completed + dynamic track color
                 val totalNotes = day.notes.size
                 val completedNotes = day.notes.count { it.isCompleted }
                 val percent = if (totalNotes > 0) (completedNotes * 100) / totalNotes else 0
+
+                // Toggle UI elements depending on whether tasks exist
+                if (totalNotes == 0) {
+                    // Показываем серый граф без процентов и без надписи
+                    binding.progressIndicator.visibility = android.view.View.VISIBLE
+                    binding.progressPercentText.visibility = android.view.View.GONE
+                    binding.noTasksText.visibility = android.view.View.GONE
+                } else {
+                    binding.progressIndicator.visibility = android.view.View.VISIBLE
+                    binding.progressPercentText.visibility = android.view.View.VISIBLE
+                    binding.noTasksText.visibility = android.view.View.GONE
+                }
+
                 binding.progressPercentText.text = "$percent%"
                 binding.progressIndicator.progress = percent
+                // Indicator (completed part) is always blue
+                binding.progressIndicator.setIndicatorColor(DARK_BLUE)
+                // Track (remaining part) color rules:
+                // - No tasks at all: stay gray
+                // - Future day with tasks: light red
+                // - Past/today with tasks: gray
+                val trackColor = when {
+                    totalNotes == 0 -> LIGHT_GRAY
+                    percent < 100 -> LIGHT_RED
+                    else -> LIGHT_GRAY
+                }
+                try {
+                    binding.progressIndicator.trackColor = trackColor
+                } catch (_: Throwable) {
+                    // Fallback for older material versions
+                }
 
                 // Выделяем текущий день темно-синей окантовкой (в 2 раза толще)
                 if (day.date == currentDate) {
@@ -82,6 +111,9 @@ class DaysAdapter(
 
     companion object {
         private val DARK_BLUE = android.graphics.Color.parseColor("#1976D2")
+        // Use the same red as on the left screen (overdue tasks)
+        private val LIGHT_RED = android.graphics.Color.parseColor("#F44336")
+        private val LIGHT_GRAY = android.graphics.Color.parseColor("#E0E0E0")
     }
 }
 

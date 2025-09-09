@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Тело кота (основной овал) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FF8C00" />
+            <stroke android:width="2dp" android:color="#FF4500" />
+            <size android:width="50dp" android:height="35dp" />
+        </shape>
+    </item>
+    
+    <!-- Левое ушко -->
+    <item android:left="8dp" android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF8C00" />
+            <stroke android:width="1dp" android:color="#FF4500" />
+            <size android:width="12dp" android:height="10dp" />
+        </shape>
+    </item>
+    
+    <!-- Правое ушко -->
+    <item android:right="8dp" android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF8C00" />
+            <stroke android:width="1dp" android:color="#FF4500" />
+            <size android:width="12dp" android:height="10dp" />
+        </shape>
+    </item>
+    
+    <!-- Внутренняя часть левого ушка -->
+    <item android:left="10dp" android:top="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB366" />
+            <size android:width="6dp" android:height="5dp" />
+        </shape>
+    </item>
+    
+    <!-- Внутренняя часть правого ушка -->
+    <item android:right="10dp" android:top="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB366" />
+            <size android:width="6dp" android:height="5dp" />
+        </shape>
+    </item>
+    
+    <!-- Левый глаз -->
+    <item android:left="12dp" android:top="12dp">
+        <shape android:shape="oval">
+            <solid android:color="#000000" />
+            <size android:width="4dp" android:height="4dp" />
+        </shape>
+    </item>
+    
+    <!-- Правый глаз -->
+    <item android:right="12dp" android:top="12dp">
+        <shape android:shape="oval">
+            <solid android:color="#000000" />
+            <size android:width="4dp" android:height="4dp" />
+        </shape>
+    </item>
+    
+    <!-- Носик -->
+    <item android:left="23dp" android:top="18dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF69B4" />
+            <size android:width="4dp" android:height="3dp" />
+        </shape>
+    </item>
+    
+    <!-- Ротик -->
+    <item android:left="20dp" android:top="22dp">
+        <shape android:shape="oval">
+            <solid android:color="#000000" />
+            <size android:width="10dp" android:height="2dp" />
+        </shape>
+    </item>
+    
+    <!-- Хвостик -->
+    <item android:right="2dp" android:top="15dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF8C00" />
+            <stroke android:width="1dp" android:color="#FF4500" />
+            <size android:width="15dp" android:height="8dp" />
+        </shape>
+    </item>
+    
+</layer-list>

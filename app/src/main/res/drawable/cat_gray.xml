@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    
+    <!-- Тело кота -->
+    <solid android:color="#808080" />
+    
+    <!-- Обводка -->
+    <stroke 
+        android:width="2dp" 
+        android:color="#696969" />
+    
+    <!-- Размер -->
+    <size 
+        android:width="40dp" 
+        android:height="30dp" />
+    
+</shape>

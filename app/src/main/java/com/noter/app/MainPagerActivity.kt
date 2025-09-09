@@ -125,7 +125,7 @@ class MainPagerActivity : AppCompatActivity() {
     private fun refreshFragments() {
         android.util.Log.d("MainPagerActivity", "Refreshing fragments after import")
         
-        // Обновляем все фрагменты (0: Overdue, 1: Main, 2: Future)
+        // Обновляем фрагменты (0: Overdue, 1: Main, 2: Future)
         val overdueFragment = pagerAdapter.getFragment(0) as? OverdueNotesFragment
         val mainFragment = pagerAdapter.getFragment(1) as? MainFragment
         val futureFragment = pagerAdapter.getFragment(2) as? FutureNotesFragment
@@ -136,17 +136,14 @@ class MainPagerActivity : AppCompatActivity() {
         
         mainFragment?.let { fragment ->
             android.util.Log.d("MainPagerActivity", "Refreshing MainFragment")
-            // Принудительно обновляем данные
             fragment.refreshData()
         }
         
         futureFragment?.let { fragment ->
             android.util.Log.d("MainPagerActivity", "Refreshing FutureNotesFragment")
-            // Принудительно обновляем данные
             fragment.refreshData()
         }
         
-        // Также обновляем адаптер ViewPager
         pagerAdapter.notifyDataSetChanged()
         android.util.Log.d("MainPagerActivity", "Fragments refresh completed")
     }

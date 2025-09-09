@@ -16,6 +16,7 @@ import com.noter.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+import nl.dionsegijn.konfetti.xml.KonfettiView;
 
 public final class ActivityNotesBinding implements ViewBinding {
   @NonNull
@@ -25,16 +26,20 @@ public final class ActivityNotesBinding implements ViewBinding {
   public final FloatingActionButton addNoteButton;
 
   @NonNull
+  public final KonfettiView confettiNotes;
+
+  @NonNull
   public final TextView dayTitleTextView;
 
   @NonNull
   public final RecyclerView notesRecyclerView;
 
   private ActivityNotesBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton addNoteButton, @NonNull TextView dayTitleTextView,
-      @NonNull RecyclerView notesRecyclerView) {
+      @NonNull FloatingActionButton addNoteButton, @NonNull KonfettiView confettiNotes,
+      @NonNull TextView dayTitleTextView, @NonNull RecyclerView notesRecyclerView) {
     this.rootView = rootView;
     this.addNoteButton = addNoteButton;
+    this.confettiNotes = confettiNotes;
     this.dayTitleTextView = dayTitleTextView;
     this.notesRecyclerView = notesRecyclerView;
   }
@@ -72,6 +77,12 @@ public final class ActivityNotesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.confettiNotes;
+      KonfettiView confettiNotes = ViewBindings.findChildViewById(rootView, id);
+      if (confettiNotes == null) {
+        break missingId;
+      }
+
       id = R.id.dayTitleTextView;
       TextView dayTitleTextView = ViewBindings.findChildViewById(rootView, id);
       if (dayTitleTextView == null) {
@@ -84,8 +95,8 @@ public final class ActivityNotesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNotesBinding((ConstraintLayout) rootView, addNoteButton, dayTitleTextView,
-          notesRecyclerView);
+      return new ActivityNotesBinding((ConstraintLayout) rootView, addNoteButton, confettiNotes,
+          dayTitleTextView, notesRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -25,6 +25,9 @@ public final class ItemDayBinding implements ViewBinding {
   public final TextView dayDateTextView;
 
   @NonNull
+  public final TextView noTasksText;
+
+  @NonNull
   public final TextView notesPreviewTextView;
 
   @NonNull
@@ -37,10 +40,12 @@ public final class ItemDayBinding implements ViewBinding {
   public final TextView progressPercentText;
 
   private ItemDayBinding(@NonNull MaterialCardView rootView, @NonNull TextView dayDateTextView,
-      @NonNull TextView notesPreviewTextView, @NonNull FrameLayout progressContainer,
-      @NonNull CircularProgressIndicator progressIndicator, @NonNull TextView progressPercentText) {
+      @NonNull TextView noTasksText, @NonNull TextView notesPreviewTextView,
+      @NonNull FrameLayout progressContainer, @NonNull CircularProgressIndicator progressIndicator,
+      @NonNull TextView progressPercentText) {
     this.rootView = rootView;
     this.dayDateTextView = dayDateTextView;
+    this.noTasksText = noTasksText;
     this.notesPreviewTextView = notesPreviewTextView;
     this.progressContainer = progressContainer;
     this.progressIndicator = progressIndicator;
@@ -80,6 +85,12 @@ public final class ItemDayBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.noTasksText;
+      TextView noTasksText = ViewBindings.findChildViewById(rootView, id);
+      if (noTasksText == null) {
+        break missingId;
+      }
+
       id = R.id.notesPreviewTextView;
       TextView notesPreviewTextView = ViewBindings.findChildViewById(rootView, id);
       if (notesPreviewTextView == null) {
@@ -104,8 +115,8 @@ public final class ItemDayBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemDayBinding((MaterialCardView) rootView, dayDateTextView, notesPreviewTextView,
-          progressContainer, progressIndicator, progressPercentText);
+      return new ItemDayBinding((MaterialCardView) rootView, dayDateTextView, noTasksText,
+          notesPreviewTextView, progressContainer, progressIndicator, progressPercentText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -79,6 +79,16 @@
                 android:textColor="@color/text_primary"
                 android:textSize="12sp"
                 tools:text="75%" />
+
+            <TextView
+                android:id="@+id/noTasksText"
+                android:layout_width="86dp"
+                android:layout_height="87dp"
+                android:gravity="center"
+                android:text="No tasks"
+                android:visibility="gone"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
         </FrameLayout>
 
     </LinearLayout>

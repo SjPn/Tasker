@@ -24,7 +24,7 @@ data class Day(
         val nonEmptyNotes = notes.filter { it.text.trim().isNotEmpty() }
         android.util.Log.d("Day", "Date: $date, Total notes: ${notes.size}, Non-empty: ${nonEmptyNotes.size}")
         return if (nonEmptyNotes.isEmpty()) {
-            "No notes"
+            "No tasks"
         } else {
             val preview = nonEmptyNotes.take(3).joinToString("\n") { note ->
                 val text = note.text.trim()

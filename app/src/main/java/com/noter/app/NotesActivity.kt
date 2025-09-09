@@ -70,7 +70,21 @@ class NotesActivity : AppCompatActivity() {
                 // Заметка удалена - сохраняем все заметки
                 saveNotes()
             },
-            currentDate = currentDate
+            currentDate = currentDate,
+            onAllTasksCompleted = {
+                try {
+                    val konfetti = binding.confettiNotes
+                    val party: nl.dionsegijn.konfetti.core.Party =
+                        nl.dionsegijn.konfetti.core.PartyFactory(
+                            nl.dionsegijn.konfetti.core.emitter.Emitter(1, java.util.concurrent.TimeUnit.SECONDS).perSecond(250)
+                        )
+                            .spread(360)
+                            .timeToLive(1200L)
+                            .position(0.5, 0.0)
+                            .build()
+                    konfetti.start(party)
+                } catch (_: Exception) {}
+            }
         )
 
         binding.notesRecyclerView.apply {

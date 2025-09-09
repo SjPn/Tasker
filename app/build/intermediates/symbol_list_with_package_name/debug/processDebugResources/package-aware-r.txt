@@ -2938,6 +2938,13 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cat_food_bowl
+drawable cat_gray
+drawable cat_gray_detailed
+drawable cat_orange
+drawable cat_orange_detailed
+drawable cat_scratching_post
+drawable cat_toy
 drawable circle_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3034,6 +3041,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable room_background
+drawable room_background_isometric
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3163,6 +3172,7 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confettiNotes
 id confirm_button
 id constraint
 id container
@@ -3364,6 +3374,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id noTasksText
 id none
 id normal
 id north
@@ -3768,6 +3779,7 @@ menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+mipmap tasker
 mipmap taskora
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

@@ -15,6 +15,10 @@ import java.time.LocalDate
 import java.time.format.TextStyle
 import java.util.*
 import java.time.format.DateTimeFormatter
+import java.util.concurrent.TimeUnit
+import nl.dionsegijn.konfetti.core.Party
+import nl.dionsegijn.konfetti.core.PartyFactory
+import nl.dionsegijn.konfetti.core.emitter.Emitter
 
 class MainFragment : Fragment() {
 
@@ -436,6 +440,7 @@ class MainFragment : Fragment() {
             if (uncheckedNotes == 0) {
                 binding.infoMessageTextView.text = getString(R.string.all_tasks_completed)
                 binding.infoCard.strokeColor = SUCCESS_COLOR
+                // Конфетти перенесено в NotesActivity – здесь больше не запускаем
             } else {
                 binding.infoMessageTextView.text = getString(R.string.tasks_remaining, uncheckedNotes, totalNotes)
                 binding.infoCard.strokeColor = ERROR_COLOR

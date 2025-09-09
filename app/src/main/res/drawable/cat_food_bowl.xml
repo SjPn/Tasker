@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    
+    <!-- Миска -->
+    <solid android:color="#C0C0C0" />
+    
+    <!-- Обводка -->
+    <stroke 
+        android:width="2dp" 
+        android:color="#A9A9A9" />
+    
+    <!-- Размер -->
+    <size 
+        android:width="30dp" 
+        android:height="20dp" />
+    
+</shape>

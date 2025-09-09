@@ -16,10 +16,12 @@ class NotesAdapter(
     private val onNoteChanged: (Note) -> Unit,
     private val onNoteDeleted: (Note) -> Unit,
     private val currentDate: LocalDate = LocalDate.now(),
-    private val isFutureNotes: Boolean = false
+    private val isFutureNotes: Boolean = false,
+    private val onAllTasksCompleted: () -> Unit = {}
 ) : RecyclerView.Adapter<NotesAdapter.NoteViewHolder>() {
 
     private var notes = listOf<Note>()
+    private var lastAllCompleted = false
 
     fun submitList(newNotes: List<Note>) {
         updateNotes(newNotes)
@@ -28,10 +30,23 @@ class NotesAdapter(
     fun updateNotes(newNotes: List<Note>) {
         notes = newNotes
         notifyDataSetChanged()
+        evaluateCompletion()
     }
     
     fun getNotes(): List<Note> {
         return notes
+    }
+
+    private fun evaluateCompletion() {
+        val hasTasks = notes.any { it.text.trim().isNotEmpty() }
+        val allCompleted = hasTasks && notes.filter { it.text.trim().isNotEmpty() }.all { it.isCompleted }
+        if (allCompleted && !lastAllCompleted) {
+            lastAllCompleted = true
+            onAllTasksCompleted()
+        }
+        if (!allCompleted) {
+            lastAllCompleted = false
+        }
     }
 
     fun addNote() {
@@ -42,6 +57,7 @@ class NotesAdapter(
         notifyItemInserted(notes.size - 1)
         // Уведомляем об изменении
         onNoteChanged(newNote)
+        evaluateCompletion()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
@@ -130,6 +146,7 @@ class NotesAdapter(
                     
                     // Обновляем окантовку в зависимости от статуса галочки
                     updateNoteStroke(note)
+                    evaluateCompletion()
                 }
             }
             
@@ -169,6 +186,7 @@ class NotesAdapter(
                         
                         // Восстанавливаем окантовку в зависимости от статуса заметки
                         updateNoteStroke(note)
+                        evaluateCompletion()
                         
                         // Remove empty notes (only if it's not the last note)
                         if (currentText.trim().isEmpty() && notes.size > 1) {

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    
+    <!-- Игрушка -->
+    <solid android:color="#FF69B4" />
+    
+    <!-- Обводка -->
+    <stroke 
+        android:width="2dp" 
+        android:color="#FF1493" />
+    
+    <!-- Размер -->
+    <size 
+        android:width="25dp" 
+        android:height="25dp" />
+    
+</shape>

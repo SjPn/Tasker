@@ -22,36 +22,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="2dp">
+            android:orientation="vertical">
 
             <!-- Верхняя строка с логотипом и меню -->
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
                 android:scrollbarDefaultDelayBeforeFade="200">
 
-                <!-- Логотип Taskora (слева) -->
+                <!-- Логотип Tasker (слева) -->
                 <ImageView
                     android:id="@+id/taskoraLogo"
-                    android:layout_width="96dp"
-                    android:layout_height="96dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:contentDescription="Taskora Logo"
+                    android:contentDescription="Tasker Logo"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/taskora" />
+                    android:src="@mipmap/tasker" />
 
                 <!-- Кнопка меню (справа) -->
                 <ImageButton
                     android:id="@+id/menuButton"
                     style="@style/MenuButton"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="5dp"
                     android:alpha="0.8"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Меню"
@@ -66,8 +63,9 @@
                 style="@style/TextTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="13dp"
+                android:layout_marginBottom="1dp"
                 android:gravity="center"
+                android:textStyle="normal"
                 tools:text="Сегодня" />
 
             <TextView
@@ -78,11 +76,14 @@
                 android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="3"
+                android:textStyle="bold"
                 tools:text="Отлично, ты молодец. Все дела сделаны." />
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    
 
     <!-- Разделительная линия -->
     <View
