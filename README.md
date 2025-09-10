@@ -57,7 +57,7 @@ ________________________________________________________________________________
 📱 Android: Min API 26 (8.0), Target 34 (14)
 
 📸 Скриншоты
-<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/64ad1751-8ed7-4083-8e45-d76d32fc6aee" />
-<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/f8a7b282-771b-4e5e-bdd2-ec0ea66bff9b" />
-<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/7f1d30df-090f-4110-b7d0-9039ea1c3a9a" />
-<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/3be41b37-e62d-4f6b-aae6-3528bb8966e2" />
+<img width="270" height="600" alt="487289397-64ad1751-8ed7-4083-8e45-d76d32fc6aee" src="https://github.com/user-attachments/assets/ea337097-9e67-4e6b-95a0-d4e62cf2be60" />
+<img width="270" height="600" alt="487289459-f8a7b282-771b-4e5e-bdd2-ec0ea66bff9b" src="https://github.com/user-attachments/assets/4be26815-ec0d-4872-9acb-7e37b8a3ccb1" />
+<img width="270" height="600" alt="487289650-7f1d30df-090f-4110-b7d0-9039ea1c3a9a" src="https://github.com/user-attachments/assets/49f761d3-a13a-4e7d-86bf-8db7fb343fa2" />
+<<img width="270" height="600" alt="Screenshot_20250910_143342" src="https://github.com/user-attachments/assets/6ac51005-2e93-44de-944e-83517c8b0aa0" />
