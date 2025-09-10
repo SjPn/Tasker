@@ -45,6 +45,12 @@ class MainPagerActivity : AppCompatActivity() {
         binding = ActivityMainPagerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Полностью отключаем звуки на корне окна и на корневом layout
+        try {
+            com.noter.app.util.ViewUtils.disableSoundEffectsDeep(window?.decorView)
+            com.noter.app.util.ViewUtils.disableSoundEffectsDeep(binding.root)
+        } catch (_: Exception) {}
+
         dataManager = DataManager(this)
         setupViewPager()
     }
@@ -125,15 +131,20 @@ class MainPagerActivity : AppCompatActivity() {
     private fun refreshFragments() {
         android.util.Log.d("MainPagerActivity", "Refreshing fragments after import")
         
-        // Обновляем фрагменты (0: Overdue, 1: Main, 2: Future)
+        // Обновляем фрагменты (0: Overdue, 1: Main, 2: Future, 3: Journal)
         val overdueFragment = pagerAdapter.getFragment(0) as? OverdueNotesFragment
         val mainFragment = pagerAdapter.getFragment(1) as? MainFragment
         val futureFragment = pagerAdapter.getFragment(2) as? FutureNotesFragment
+        val journalFragment = pagerAdapter.getFragment(3) as? JournalFragment
         overdueFragment?.let { fragment ->
             android.util.Log.d("MainPagerActivity", "Refreshing OverdueNotesFragment")
             fragment.refreshOverdueNotes()
         }
         
+        journalFragment?.let { fragment ->
+            android.util.Log.d("MainPagerActivity", "Refreshing JournalFragment")
+            fragment.refreshData()
+        }
         mainFragment?.let { fragment ->
             android.util.Log.d("MainPagerActivity", "Refreshing MainFragment")
             fragment.refreshData()

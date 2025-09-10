@@ -37,6 +37,7 @@ class OverdueNotesFragment : Fragment() {
         dataManager = DataManager(requireContext())
         setupRecyclerView()
         setupMenuButton()
+        try { com.noter.app.util.ViewUtils.disableSoundEffectsDeep(binding.root) } catch (_: Exception) {}
         loadOverdueNotes()
         updateInfoBlock()
     }

@@ -57,6 +57,9 @@ class MainFragment : Fragment() {
         generateDays()
         updateInfoBlock()
         
+        // Полностью отключаем звуки кликов на всём экране
+        try { com.noter.app.util.ViewUtils.disableSoundEffectsDeep(binding.root) } catch (_: Exception) {}
+
         // Дополнительное центрирование через некоторое время после создания view
         binding.root.postDelayed({
             val today = LocalDate.now()

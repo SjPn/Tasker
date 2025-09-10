@@ -36,6 +36,7 @@ class FutureNotesFragment : Fragment() {
 
         setupUI()
         setupMenuButton()
+        try { com.noter.app.util.ViewUtils.disableSoundEffectsDeep(binding.root) } catch (_: Exception) {}
         setupRecyclerView()
     }
 

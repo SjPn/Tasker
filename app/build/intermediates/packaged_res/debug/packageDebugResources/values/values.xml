@@ -3,7 +3,7 @@
     <color name="accent">#FF2196F3</color>
     <color name="accent_dark">#FF1976D2</color>
     <color name="background_card">#FFFFFFFF</color>
-    <color name="background_primary">#FFFAFAFA</color>
+    <color name="background_primary">#FFFFFFFF</color>
     <color name="background_secondary">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="dark_gray">@color/text_secondary</color>
@@ -26,7 +26,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="text_hint">#FFBDBDBD</color>
     <color name="text_primary">#FF212121</color>
-    <color name="text_secondary">#FF757575</color>
+    <color name="text_secondary">#FF616161</color>
     <color name="warning">#FFFF9800</color>
     <color name="white">#FFFFFFFF</color>
     <string name="add_note">Add note</string>
@@ -69,8 +69,9 @@
     </style>
     <style name="MenuButton" parent="Widget.Material3.Button.IconButton">
         <item name="iconTint">@color/text_primary</item>
-        <item name="backgroundTint">@color/background_card</item>
+        <item name="backgroundTint">@android:color/transparent</item>
         <item name="cornerRadius">24dp</item>
+        <item name="android:soundEffectsEnabled">false</item>
     </style>
     <style name="ModernCard" parent="Widget.Material3.CardView.Filled">
         <item name="cardCornerRadius">12dp</item>
@@ -82,6 +83,7 @@
         <item name="backgroundTint">@color/primary</item>
         <item name="tint">@color/white</item>
         <item name="elevation">6dp</item>
+        <item name="android:soundEffectsEnabled">false</item>
     </style>
     <style name="TextSubtitle" parent="TextAppearance.Material3.BodyMedium">
         <item name="android:textColor">@color/text_secondary</item>
@@ -92,7 +94,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginBottom">8dp</item>
     </style>
-    <style name="Theme.NoteR" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.NoteR" parent="Theme.Material3.Light.NoActionBar">
         
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryVariant">@color/primary_dark</item>
@@ -105,6 +107,8 @@
         <item name="android:statusBarColor" ns1:targetApi="l">@color/primary</item>
         
         <item name="android:windowBackground">@color/background_primary</item>
+        
+        <item name="android:forceDarkAllowed">false</item>
         
     </style>
 </resources>

@@ -3119,6 +3119,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addButton
 id addNoteButton
 id alertTitle
 id aligned
@@ -3177,6 +3178,7 @@ id confirm_button
 id constraint
 id container
 id content
+id contentEditText
 id contentPanel
 id contiguous
 id continuousVelocity
@@ -3417,6 +3419,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3476,6 +3479,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id snippetText
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3534,6 +3538,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleText
 id titleTextView
 id title_template
 id toggle
@@ -3688,6 +3693,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_future_notes
+layout activity_journal_edit
 layout activity_main
 layout activity_main_pager
 layout activity_note_detail
@@ -3709,9 +3715,11 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_future_notes
+layout fragment_journal
 layout fragment_main
 layout fragment_overdue_notes
 layout item_day
+layout item_journal
 layout item_note
 layout item_overdue_note
 layout m3_alert_dialog

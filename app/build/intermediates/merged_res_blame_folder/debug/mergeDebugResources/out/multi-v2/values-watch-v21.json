@@ -4,7 +4,7 @@
             "outputFile": "com.noter.app-mergeDebugResources-33:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\intel\\.gradle\\caches\\8.9\\transforms\\c3ac7b2e43493a2328da37ae55702b48\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\gradle\\caches\\8.9\\transforms\\c3ac7b2e43493a2328da37ae55702b48\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

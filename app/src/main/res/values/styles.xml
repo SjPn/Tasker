@@ -38,8 +38,9 @@
     <!-- Menu Button Style -->
     <style name="MenuButton" parent="Widget.Material3.Button.IconButton">
         <item name="iconTint">@color/text_primary</item>
-        <item name="backgroundTint">@color/background_card</item>
+        <item name="backgroundTint">@android:color/transparent</item>
         <item name="cornerRadius">24dp</item>
+        <item name="android:soundEffectsEnabled">false</item>
     </style>
 
     <!-- Modern FAB Style -->
@@ -47,5 +48,6 @@
         <item name="backgroundTint">@color/primary</item>
         <item name="tint">@color/white</item>
         <item name="elevation">6dp</item>
+        <item name="android:soundEffectsEnabled">false</item>
     </style>
 </resources> 

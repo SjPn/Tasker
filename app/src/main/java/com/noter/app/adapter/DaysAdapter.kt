@@ -26,6 +26,7 @@ class DaysAdapter(
         val binding = ItemDayBinding.inflate(
             LayoutInflater.from(parent.context), parent, false
         )
+        try { com.noter.app.util.ViewUtils.disableSoundEffectsDeep(binding.root) } catch (_: Exception) {}
         android.util.Log.d("DaysAdapter", "Created new view holder")
         return DayViewHolder(binding)
     }

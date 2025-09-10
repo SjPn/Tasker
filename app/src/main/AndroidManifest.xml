@@ -40,6 +40,10 @@
             android:name=".NoteDetailActivity"
             android:exported="false"
             android:theme="@style/Theme.NoteR" />
+        <activity
+            android:name=".JournalEditActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NoteR" />
     </application>
 
 </manifest> 

@@ -39,7 +39,8 @@
                     android:layout_centerVertical="true"
                     android:contentDescription="Tasker Logo"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/tasker" />
+                    android:src="@mipmap/tasker"
+                    android:soundEffectsEnabled="false" />
 
                 <!-- Кнопка меню (справа) -->
                 <ImageButton
@@ -50,7 +51,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:alpha="0.8"
-                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:background="@null"
+                    android:soundEffectsEnabled="false"
                     android:contentDescription="Меню"
                     android:src="@drawable/ic_more_vertical"
                     android:tint="@color/text_secondary" />

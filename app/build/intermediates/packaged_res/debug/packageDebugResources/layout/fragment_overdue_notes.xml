@@ -40,7 +40,8 @@
                     android:layout_alignParentStart="true"
                     android:contentDescription="Tasker Logo"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/tasker" />
+                    android:src="@mipmap/tasker"
+                    android:soundEffectsEnabled="false" />
 
                 <ImageButton
                     android:id="@+id/menuButton"
@@ -49,7 +50,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:alpha="0.8"
-                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:background="@null"
+                    android:soundEffectsEnabled="false"
                     android:contentDescription="Меню"
                     android:src="@drawable/ic_more_vertical"
                     android:tint="@color/text_secondary" />

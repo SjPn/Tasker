@@ -4,7 +4,7 @@
             "outputFile": "com.noter.app-mergeDebugResources-33:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\intel\\.gradle\\caches\\8.9\\transforms\\3ff6d9047eac38a0efb0a3f6a79210e4\\transformed\\core-1.10.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\gradle\\caches\\8.9\\transforms\\3ff6d9047eac38a0efb0a3f6a79210e4\\transformed\\core-1.10.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\intel\\.gradle\\caches\\8.9\\transforms\\c3ac7b2e43493a2328da37ae55702b48\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\gradle\\caches\\8.9\\transforms\\c3ac7b2e43493a2328da37ae55702b48\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

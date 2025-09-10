@@ -22,6 +22,9 @@ class NotesActivity : AppCompatActivity() {
         binding = ActivityNotesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Глобально отключаем звуки кликов на экране заметок
+        try { com.noter.app.util.ViewUtils.disableSoundEffectsDeep(binding.root) } catch (_: Exception) {}
+
         // Инициализируем DataManager
         dataManager = DataManager(this)
 

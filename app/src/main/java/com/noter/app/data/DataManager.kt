@@ -11,6 +11,7 @@ class DataManager(context: Context) {
     private val gson = Gson()
     private val cache = mutableMapOf<LocalDate, List<Note>>()
     private var futureNotesCache: List<Note>? = null
+    // Журнал: читаем напрямую из SharedPreferences без кэша, чтобы список обновлялся сразу
     
     fun saveNotes(date: LocalDate, notes: List<Note>) {
         val key = "notes_${date}"
@@ -90,6 +91,29 @@ class DataManager(context: Context) {
     fun clearCache() {
         cache.clear()
         futureNotesCache = null
+        // journal has no cache now
+    }
+
+    fun invalidateJournalCache() { /* no-op: no cache kept */ }
+
+    // Journal entries (simple notes list not bound to date)
+    fun saveJournal(entries: List<JournalEntry>) {
+        val key = "journal_entries"
+        val json = gson.toJson(entries)
+        sharedPreferences.edit().putString(key, json).apply()
+        // no cache
+    }
+
+    fun loadJournal(): List<JournalEntry> {
+        val key = "journal_entries"
+        val json = sharedPreferences.getString(key, null)
+        val entries = if (json != null) {
+            try {
+                val type = object : TypeToken<List<JournalEntry>>() {}.type
+                gson.fromJson<List<JournalEntry>>(json, type) ?: emptyList()
+            } catch (e: Exception) { emptyList() }
+        } else emptyList()
+        return entries
     }
     
     // Методы для экспорта/импорта всех данных

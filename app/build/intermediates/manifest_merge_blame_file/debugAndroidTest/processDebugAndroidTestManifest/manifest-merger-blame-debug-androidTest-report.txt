@@ -3,24 +3,24 @@
 3    package="com.taskora.app.test" >
 4
 5    <uses-sdk
-5-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:5:5-74
+5-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:5:5-74
 6        android:minSdkVersion="26"
-6-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:5:15-41
+6-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:5:15-41
 7        android:targetSdkVersion="34" />
-7-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:5:42-71
+7-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:5:42-71
 8
 9    <instrumentation
-9-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:11:5-15:65
+9-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:11:5-15:65
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:11:22-76
+10-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:11:22-76
 11        android:functionalTest="false"
-11-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:14:22-52
+11-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:14:22-52
 12        android:handleProfiling="false"
-12-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:13:22-53
+12-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:13:22-53
 13        android:label="Tests for com.taskora.app"
-13-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:15:22-63
+13-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:15:22-63
 14        android:targetPackage="com.taskora.app" />
-14-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:12:22-61
+14-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:12:22-61
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] C:\gradle\caches\8.9\transforms\07f382d4d1d765542172950b8ef89358\transformed\jetified-core-1.5.0\AndroidManifest.xml:24:5-72
@@ -40,12 +40,12 @@
 22    </queries>
 23
 24    <application
-24-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:7:5-9:19
+24-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:7:5-9:19
 25        android:debuggable="true"
 26        android:extractNativeLibs="false" >
 27        <uses-library android:name="android.test.runner" />
-27-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:8:9-60
-27-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10065412028521304548.xml:8:23-57
+27-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:8:9-60
+27-->E:\MyPyPro\NoteR\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1422377890236886377.xml:8:23-57
 28
 29        <activity
 29-->[androidx.test:core:1.5.0] C:\gradle\caches\8.9\transforms\07f382d4d1d765542172950b8ef89358\transformed\jetified-core-1.5.0\AndroidManifest.xml:27:9-34:20
