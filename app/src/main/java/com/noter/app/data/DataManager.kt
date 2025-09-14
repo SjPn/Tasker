@@ -120,12 +120,20 @@ class DataManager(context: Context) {
     fun exportAllData(): String {
         val allData = mutableMapOf<String, Any>()
         
-        // Экспортируем заметки за последние 30 дней
-        for (i in -15..15) {
-            val date = LocalDate.now().plusDays(i.toLong())
-            val notes = loadNotes(date)
-            if (notes.isNotEmpty()) {
-                allData["notes_${date}"] = notes
+        // Экспортируем ВСЕ заметки по датам (без ограничений)
+        val allKeys = sharedPreferences.all.keys
+        allKeys.forEach { key ->
+            if (key.startsWith("notes_")) {
+                val dateStr = key.removePrefix("notes_")
+                try {
+                    val date = LocalDate.parse(dateStr)
+                    val notes = loadNotes(date)
+                    if (notes.isNotEmpty()) {
+                        allData["notes_${date}"] = notes
+                    }
+                } catch (e: Exception) {
+                    // Пропускаем некорректные ключи
+                }
             }
         }
         
@@ -133,6 +141,12 @@ class DataManager(context: Context) {
         val futureNotes = loadFutureNotes()
         if (futureNotes.isNotEmpty()) {
             allData["future_notes"] = futureNotes
+        }
+        
+        // Экспортируем записи журнала
+        val journalEntries = loadJournal()
+        if (journalEntries.isNotEmpty()) {
+            allData["journal_entries"] = journalEntries
         }
         
         return gson.toJson(allData)
@@ -158,6 +172,12 @@ class DataManager(context: Context) {
                         val notesType = object : TypeToken<List<Note>>() {}.type
                         val notes = gson.fromJson<List<Note>>(notesJson, notesType) ?: emptyList()
                         saveFutureNotes(notes)
+                    }
+                    key == "journal_entries" -> {
+                        val entriesJson = gson.toJson(value)
+                        val entriesType = object : TypeToken<List<JournalEntry>>() {}.type
+                        val entries = gson.fromJson<List<JournalEntry>>(entriesJson, entriesType) ?: emptyList()
+                        saveJournal(entries)
                     }
                 }
             }

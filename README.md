@@ -15,6 +15,7 @@ ________________________________________________________________________________
        🔴 Left / Overdue: всё, что ты не успел. Красная рамка напоминает, синяя — значит уже закрыто.
        📅 Center / Today & Days: твой дневной штаб. Список дней с мини-превью и прогрессом.
        🔮 Right / Future: идеи и планы «на потом» без лишних дат.
+       📝 Journal / Записи (самый правый): быстрые заметки. Первая строка — заголовок, ниже короткий сниппет. Тап — открыть и отредактировать, выход назад — сохранить.
     
    👀 Превью задач — до 3 пунктов в карточке, остальное прячется за ..., чтобы интерфейс оставался чистым.
    
@@ -59,3 +60,5 @@ ________________________________________________________________________________
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/64ad1751-8ed7-4083-8e45-d76d32fc6aee" />
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/f8a7b282-771b-4e5e-bdd2-ec0ea66bff9b" />
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/7f1d30df-090f-4110-b7d0-9039ea1c3a9a" />
+<img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/3be41b37-e62d-4f6b-aae6-3528bb8966e2" />
+
